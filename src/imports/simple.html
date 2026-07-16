@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Test</title>
+    <style>
+        body { background: #f0f0f0; padding: 20px; font-family: Arial; }
+        .box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #0052cc; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>测试页面</h1>
+        <p>服务器正常运行中...</p>
+        <p id="time"></p>
+    </div>
+    <script>
+        document.getElementById('time').textContent = '当前时间: ' + new Date().toLocaleString();
+    </script>
+</body>
+</html>

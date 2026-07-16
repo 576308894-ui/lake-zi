@@ -1,0 +1,14 @@
+// Shared blacklist data used by both BlacklistManagementPage and SafetyBlacklistPage
+
+export const safetyBlacklistData = [
+  { id: 1, code: "BL001", name: "赵六", idCard: "370104****0078", gender: "男", age: 38, unit: "中建三局", team: "钢筋班组", trade: "钢筋工", violations: 6, lastViolation: "2026-06-28", lastViolationType: "未戴安全帽", blacklistTime: "2026-06-29", blacklistReason: "6个月内安全违规次数超过5次，按规定列入黑名单", operator: "王芳", status: "黑名单", phone: "136****0004", entryTime: "2024-04-01" },
+  { id: 2, code: "BL002", name: "周八", idCard: "370108****0056", gender: "男", age: 41, unit: "中铁建设", team: "木工班组", trade: "木工", violations: 7, lastViolation: "2026-07-01", lastViolationType: "进入危险区域", blacklistTime: "2026-07-02", blacklistReason: "7次安全违规，包括3次进入危险区域，危险程度高", operator: "李明", status: "黑名单", phone: "132****0008", entryTime: "2024-04-05" },
+  { id: 3, code: "BL003", name: "刘大力", idCard: "370201****0033", gender: "男", age: 44, unit: "中建八局", team: "钢筋班组", trade: "钢筋工", violations: 5, lastViolation: "2026-06-15", lastViolationType: "不系安全带", blacklistTime: "2026-06-16", blacklistReason: "高空作业不系安全带累计5次，存在重大安全隐患", operator: "王芳", status: "黑名单", phone: "189****0033", entryTime: "2024-05-10" },
+  { id: 4, code: "BL004", name: "陈大宝", idCard: "370301****0045", gender: "男", age: 50, unit: "中铁十二局", team: "混凝土班组", trade: "混凝土工", violations: 8, lastViolation: "2026-07-03", lastViolationType: "明火违规作业", blacklistTime: "2026-07-04", blacklistReason: "明火违规作业2次，违规次数累计8次，影响恶劣", operator: "李明", status: "黑名单", phone: "177****0045", entryTime: "2024-03-20" },
+  { id: 5, code: "BL005", name: "马小虎", idCard: "370401****0067", gender: "男", age: 29, unit: "中建一局", team: "架子班组", trade: "架子工", violations: 5, lastViolation: "2026-05-30", lastViolationType: "擅自拆除防护设施", blacklistTime: "2026-05-31", blacklistReason: "私自拆除安全防护设施，危及他人安全，违规5次", operator: "王芳", status: "黑名单", phone: "155****0067", entryTime: "2024-04-15" },
+  { id: 6, code: "BL006", name: "黄建军", idCard: "370501****0089", gender: "男", age: 37, unit: "中铁二十四局", team: "模板班组", trade: "木工", violations: 6, lastViolation: "2026-06-20", lastViolationType: "酒后进入施工区域", blacklistTime: "2026-06-21", blacklistReason: "酒后进入施工现场2次，多次违规累计达6次", operator: "李明", status: "已恢复", phone: "166****0089", entryTime: "2024-03-25", restoreTime: "2026-07-05", restoreReason: "完成安全培训考核，经审批恢复白名单资格" },
+  { id: 7, code: "BL007", name: "田志远", idCard: "370601****0012", gender: "男", age: 32, unit: "中建三局", team: "电工班组", trade: "电工", violations: 5, lastViolation: "2026-04-10", lastViolationType: "带电作业未断电", blacklistTime: "2026-04-11", blacklistReason: "带电违规作业5次，存在极高安全风险", operator: "王芳", status: "已恢复", phone: "144****0012", entryTime: "2024-04-20", restoreTime: "2026-06-15", restoreReason: "参加专项安全培训并通过考核，整改效果良好" },
+];
+
+//// Shared mutable store: entries added via 安全黑榜 → 加入黑名单 flow
+export const extraBlacklistItems: typeof safetyBlacklistData = [];
